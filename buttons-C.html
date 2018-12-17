@@ -30,7 +30,35 @@ img {
   max-height: 80vh;
   margin-left: auto;
   margin-right:auto;
+
 }
+
+.carousel-link.top {
+
+    /*right: 0;
+    left: auto;*/
+    background-image: -webkit-linear-gradient(bottom,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0001)),to(rgba(0,0,0,.5)));
+    background-image: linear-gradient(to top,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+    background-repeat: repeat-x;
+
+    position: absolute;
+top: 0;
+/*bottom: 0;*/
+left: auto;
+width: 100%;
+height: 15%;
+font-size: 20px;
+color: #fff;
+text-align: center;
+text-shadow: 0 1px 2px rgba(0,0,0,.6);
+background-color: rgba(0,0,0,0);
+filter: alpha(opacity=50);
+opacity: .5;
+}
+
 </style>
 <link rel="shortcut icon" href="https://members.bib-arch.org/sites/default/files/bibarch-avatar-743473643-5.png" type="image/png">
 </head>
@@ -85,7 +113,7 @@ img {
 <div class="main">
   <div class="container" style="width:fit-content;resize:horizontal;">
     <!-- <h2>Carousel Example</h2> -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="12000">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="150">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -184,6 +212,22 @@ img {
       <a class="right carousel-control" href="#myCarousel" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right" style="color:#046380"></span>
         <span class="sr-only">Next</span>
+      </a>
+      <!-- <div id="carouselButtons">
+      <button id="playButton" type="button" class="btn btn-default btn-xs">
+          <span class="glyphicon glyphicon-play"></span>
+       </button>
+      <button id="pauseButton" type="button" class="btn btn-default btn-xs">
+          <span class="glyphicon glyphicon-pause"></span>
+      </button>
+  </div> -->
+      <!-- <a class="top carousel-control" href="#myCarousel" data-interval="100">
+        <span class="glyphicon glyphicon-play" style="color:#046380"></span>
+        <span class="sr-only">Play</span>
+      </a> -->
+      <!-- <a class="top carousel-control" href="#myCarousel" data-interval="">
+        <span class="glyphicon glyphicon-pause" style="color:#046380"></span>
+        <span class="sr-only">Pause</span> -->
       </a>
     </div>
   </div>
