@@ -9,6 +9,32 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <!-- <link rel="stylesheet" type="text/css" href="slider.css"> -->
 <style>
+.carousel-link.top {
+
+    /*right: 0;
+    left: auto;*/
+    background-image: -webkit-linear-gradient(bottom,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0001)),to(rgba(0,0,0,.5)));
+    background-image: linear-gradient(to top,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+    background-repeat: repeat-x;
+
+    position: absolute;
+top: 0;
+/*bottom: 0;*/
+left: auto;
+width: 100%;
+height: 15%;
+font-size: 20px;
+color: #fff;
+text-align: center;
+text-shadow: 0 1px 2px rgba(0,0,0,.6);
+background-color: rgba(0,0,0,0);
+filter: alpha(opacity=50);
+opacity: .5;
+}
+
 .navbar {
     font-family: "trajan-pro-3","ff-meta-serif-web-pro",Georgia,Cambria,"Times New Roman",Times,serif;
     font-variant: small-caps;
@@ -104,7 +130,7 @@ img {
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
         <div class="item active">
-          <img src="Has/Slide1.jpg" alt="Ben Hasan" height="100%">
+          <a href="https://members.bib-arch.org/biblical-archaeology-review/21/3/2" target="_blank"><img src="Has/Slide1.jpg" alt="Ben Hasan" height="100%"></a>
         </div>
 
         <div class="item">
@@ -122,6 +148,10 @@ img {
         <span class="glyphicon glyphicon-chevron-right" style="color:#046380"></span>
         <span class="sr-only">Next</span>
       </a>
+      <!-- <a class="top carousel-link" href="https://members.bib-arch.org/biblical-archaeology-review/21/3/2" target="_blank">
+        <span class="	glyphicon glyphicon-link" style="color:#046380; position:center;"></span>
+        <span class="sr-only">Link</span>
+      </a> -->
     </div>
   </div>
   <img src="images/logo.png" vspace="10"></img>
