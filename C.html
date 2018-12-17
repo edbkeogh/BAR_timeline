@@ -15,8 +15,8 @@
 }
 
 .main {
-  padding: 16px;
-  margin-top: 50px;
+  padding: 20px;
+  margin-top: 60px;
   font-family: "trajan-pro-3","ff-meta-serif-web-pro",Georgia,Cambria,"Times New Roman",Times,serif;
   /* height: 1500px; /* Used in this example to enable scrolling */ */
 }
@@ -34,6 +34,46 @@ img {
 </style>
 </head>
 <body>
+  <script>
+  <script>
+$(document).ready(function(){
+    // Activate Carousel
+    $("#myCarousel").carousel("pause");
+
+    // Click on the button to start sliding
+    $("#play").click(function(){
+        $("#myCarousel").carousel("cycle");
+    });
+
+    // Click on the button to stop sliding 
+    $("#pause").click(function(){
+        $("#myCarousel").carousel("pause");
+    });
+    //
+    // // Enable Carousel Indicators
+    // $(".item1").click(function(){
+    //     $("#myCarousel").carousel(0);
+    // });
+    // $(".item2").click(function(){
+    //     $("#myCarousel").carousel(1);
+    // });
+    // $(".item3").click(function(){
+    //     $("#myCarousel").carousel(2);
+    // });
+    // $(".item4").click(function(){
+    //     $("#myCarousel").carousel(3);
+    // });
+    //
+    // // Enable Carousel Controls
+    // $(".left").click(function(){
+    //     $("#myCarousel").carousel("prev");
+    // });
+    // $(".right").click(function(){
+    //     $("#myCarousel").carousel("next");
+    // });
+});
+</script>
+  </script>
   <!-- Fixed navbar -->
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
@@ -48,15 +88,15 @@ img {
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="C.html">Canaanite</a></li>
-        <li><a href="SP.html">Sea Peoples</a></li>
-        <li><a href="K.html">Kings</a></li>
-        <li><a href="DK.html">Divided Kingdom</a></li>
-        <li><a href="P.html">Persian</a></li>
-        <li><a href="Hel.html">Hellenistic</a></li>
-        <li><a href="Has.html">Hasmonean</a></li>
-        <li><a href="Rom.html">Roman</a></li>
-        <li><a href="Her.html">Herodian</a></li>
+        <li class="active"><a href="C.html">Canaanite<br/>c3200 - c1000</a></li>
+        <li><a href="SP.html">Sea Peoples<br/>c1400 - c1000</a></li>
+        <li><a href="K.html">Kings<br/>c1000 - c900</a></li>
+        <li><a href="DK.html">Divided Kingdom<br/>c900 - c550</a></li>
+        <li><a href="P.html">Persian<br/>c550 - 333</a></li>
+        <li><a href="Hel.html">Hellenistic<br/>333 - 167</a></li>
+        <li><a href="Has.html">Hasmonean<br/>167 - 63</a></li>
+        <li><a href="Her.html">Herodian<br/>43 BCE - 44 CE</a></li>
+        <li><a href="Rom.html">Roman<br/>63 BCE - 614 CE</a></li>
         <!-- <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -79,9 +119,9 @@ img {
   </div>
 </nav>
 <div class="main">
-  <div class="container" style="width:fit-content">
+  <div class="container" style="width:fit-content;resize:horizontal;">
     <!-- <h2>Carousel Example</h2> -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="15000">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -109,66 +149,66 @@ img {
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
         <div class="item active">
-          <img src="Canaanite/C/Slide1.JPG" alt="Ben Hasan">
+          <a href="https://members.bib-arch.org/biblical-archaeology-review/21/3/2" target="_blank"><img src="Canaanite/C/Slide1.JPG" alt="Ben Hasan"></a>
         </div>
 
         <div class="item">
-          <img src="Canaanite/C/Slide2.JPG" alt="Chicago">
+          <a href="https://members.bib-arch.org/biblical-archaeology-review/21/3/2" target="_blank"><img src="Canaanite/C/Slide2.JPG" alt="Pendant"></a>
         </div>
 
         <div class="item">
-          <img src="Canaanite/C/Slide3.JPG" alt="New york">
+          <a href="https://www.biblicalarchaeology.org/daily/ancient-cultures/daily-life-and-practice/bronze-age-figurine-resembles-rodins-the-thinker/" target="_blank"><img src="Canaanite/C/Slide3.JPG" alt="Canaanite Man"></a>
         </div>
 
 
       <div class="item">
-        <img src="Canaanite/C/Slide4.JPG" alt="New york">
+        <a href="https://members.bib-arch.org/bible-review/15/1/13" target="_blank"><img src="Canaanite/C/Slide4.JPG" alt="Hammurabi"></a>
       </div>
 
       <div class="item">
-        <img src="Canaanite/C/Slide5.JPG" alt="New york">
+        <a href="https://members.bib-arch.org/bible-review/11/5/10" target="_blank"><img src="Canaanite/C/Slide5.JPG" alt="Divided Land"></a>
       </div>
     <div class="item">
-      <img src="Canaanite/C/Slide6.JPG" alt="New york">
+      <a href="https://members.bib-arch.org/biblical-archaeology-review/28/4/2" target="_blank"><img src="Canaanite/C/Slide6.JPG" alt="Canaanite Cities"></a>
     </div>
   <div class="item">
-    <img src="Canaanite/C/Slide7.JPG" alt="New york">
+    <a href="https://members.bib-arch.org/biblical-archaeology-review/29/1/12" target="_blank"><img src="Canaanite/C/Slide7.JPG" alt="Sacrificial Lamb"></a>
   </div>
   <div class="item">
-    <img src="Canaanite/C/Slide8.JPG" alt="New york">
+    <a href="https://members.bib-arch.org/biblical-archaeology-review/35/1/10" target="_blank"><img src="Canaanite/C/Slide8.JPG" alt="El-Amarna Letters"></a>
   </div>
   <div class="item">
-    <img src="Canaanite/C/Slide9.JPG" alt="New york">
+    <a href="https://www.baslibrary.org/biblical-archaeology-review/9/1/5" target="_blank"><img src="Canaanite/C/Slide9.JPG" alt="Rameses II"></a>
   </div>
   <div class="item">
-    <img src="Canaanite/C/Slide10.JPG" alt="New york">
+    <a href="https://members.bib-arch.org/bible-review/19/3/4" target="_blank"><img src="Canaanite/C/Slide10.JPG" alt="Moses"></a>
   </div>
   <div class="item">
-    <img src="Canaanite/C/Slide11.JPG" alt="New york">
+    <a href="https://members.bib-arch.org/biblical-archaeology-review/40/2/8" target="_blank"><img src="Canaanite/C/Slide11.JPG" alt="Exodus 5:18"></a>
   </div>
   <div class="item">
-    <img src="Canaanite/C/Slide12.JPG" alt="New york">
+    <a href="https://members.bib-arch.org/biblical-archaeology-review/40/2/8" target="_blank"><img src="Canaanite/C/Slide12.JPG" alt="Anastasi1"></a>
   </div>
   <div class="item">
-    <img src="Canaanite/C/Slide13.JPG" alt="New york">
+    <a href="https://www.baslibrary.org/biblical-archaeology-review/42/3/2" target="_blank"><img src="Canaanite/C/Slide13.JPG" alt="Anastasi2"></a>
   </div>
   <div class="item">
-    <img src="Canaanite/C/Slide14.JPG" alt="New york">
+    <a href="https://members.bib-arch.org/bible-review/16/6/8" target="_blank"><img src="Canaanite/C/Slide14.JPG" alt="Ramesses II"></a>
   </div>
   <div class="item">
-    <img src="Canaanite/C/Slide15.JPG" alt="New york">
+    <a href="https://members.bib-arch.org/biblical-archaeology-review/29/4/1" target="_blank"><img src="Canaanite/C/Slide15.JPG" alt="El from Megiddo"></a>
   </div>
   <div class="item">
-    <img src="Canaanite/C/Slide16.JPG" alt="New york">
+    <a href="https://members.bib-arch.org/biblical-archaeology-review/27/3/1" target="_blank"><img src="Canaanite/C/Slide16.JPG" alt="Ashtoreth"></a>
   </div>
   <div class="item">
-    <img src="Canaanite/C/Slide17.JPG" alt="New york">
+    <a href="https://members.bib-arch.org/biblical-archaeology-review/27/3/1" target="_blank"><img src="Canaanite/C/Slide17.JPG" alt="Phoenician Ba'al"></a>
   </div>
   <div class="item">
-    <img src="Canaanite/C/Slide18.JPG" alt="New york">
+    <a href="https://members.bib-arch.org/biblical-archaeology-review/17/6/1" target="_blank"><img src="Canaanite/C/Slide18.JPG" alt="Merneptah Stele"></a>
   </div>
   <div class="item">
-    <img src="Canaanite/C/Slide19.JPG" alt="New york">
+    <a href="https://members.bib-arch.org/biblical-archaeology-review/41/1/12" target="_blank"><img src="Canaanite/C/Slide19.JPG" alt="Gezer High Place"></a>
   </div>
   </div>
 
@@ -184,7 +224,7 @@ img {
     </div>
   </div>
   <img src="images/logo.png" vspace="10"></img>
-<h4>Biblical Archaeology Society Online Timeline</h4>
+<!-- <h4>Biblical Archaeology Society Online Timeline</h4>
 <p>These are the Canaanite slides.</p>
 <p>Click the links below to read the relevant articles:</p>
 <a href="https://members.bib-arch.org/biblical-archaeology-review/21/3/2">10 Great Finds</a></br>
@@ -203,7 +243,7 @@ img {
 <a href="https://members.bib-arch.org/biblical-archaeology-review/27/3/1">Pagan Yahwism: The Folk Religion of Ancient Israel</a></br>
 <a href="https://members.bib-arch.org/biblical-archaeology-review/17/6/1">Rainey’s Challenge</a></br>
 <a href="https://members.bib-arch.org/biblical-archaeology-review/41/1/12">Commemorating a Covenant</a></br>
-</div>
+</div> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="../../dist/js/bootstrap.min.js"></script>
