@@ -131,6 +131,12 @@ img {
                         <li data-target="#myCarousel" data-slide-to="17"></li>
                         <li data-target="#myCarousel" data-slide-to="18"></li>
                         <li data-target="#myCarousel" data-slide-to="19"></li>
+        <li data-target="#myCarousel" data-slide-to="20"></li>
+        <li data-target="#myCarousel" data-slide-to="21"></li>
+        <li data-target="#myCarousel" data-slide-to="22"></li>
+        <li data-target="#myCarousel" data-slide-to="23"></li>
+        <li data-target="#myCarousel" data-slide-to="24"></li>
+      
         <!-- <li data-target="#myCarousel" data-slide-to="19"></li> -->
       </ol>
 
@@ -205,12 +211,20 @@ img {
   <a href="https://members.bib-arch.org/biblical-archaeology-review/37/2/4" target="_blank"><img src="K/Slide21.JPG" alt="Walls of Solomon"></a>
 </div>
 <div class="item">
-  <a href="https://members.bib-arch.org/biblical-archaeology-review/11/3/3" target="_blank"><img src="K/Slide22.JPG" alt=""></a>
+  <a href="https://members.bib-arch.org/biblical-archaeology-review/11/3/3" target="_blank"><img src="K/Slide22.JPG" alt="Casemate Walls"></a>
 </div>
 <div class="item">
-  <a href="" target="_blank"><img src="K/Slide.JPG" alt=""></a>
+  <a href="https://members.bib-arch.org/biblical-archaeology-review/24/2/13" target="_blank"><img src="K/Slide23.JPG" alt="City Gates"></a>
 </div>
-
+<div class="item">
+  <a id="switch24" href="https://members.bib-arch.org/bible-review/11/1/9" target="_blank" onclick="myFunction24()"><img src="K/Slide24.JPG" alt="Towns of Judah"></a>
+</div>
+<div class="item">
+  <a href="https://members.bib-arch.org/biblical-archaeology-review/38/3/2" target="_blank"><img src="K/Slide25.JPG" alt="Gezer Calendar"></a>
+</div>
+<!-- <div class="item">
+  <a href="" target="_blank"><img src="K/Slide26.JPG" alt=""></a>
+</div> -->
 <!--  sample switcher for multi links -
    <div class="item">
     <a id="test" href="https://members.bib-arch.org/collections/where-did-early-israelites-come" target="_blank" onclick="setTimeout(myFunction, 500)"><img src="SeaPeoples/Sea_Peoples/Slide6.JPG" alt="Joshua's Altar"></a>
@@ -298,6 +312,19 @@ switch(site) {
         break;
   case "https://www.baslibrary.org/biblical-archaeology-review/20/6/3":
         document.getElementById("switch10").href = "https://www.baslibrary.org/biblical-archaeology-review/20/4/13";
+        break;
+  };
+  return false;
+};
+function myFunction24() {
+  console.log(document.getElementById("switch24").href)
+  var site = document.getElementById("switch24").href;
+switch(site) {
+  case "https://members.bib-arch.org/biblical-archaeology-review/36/1/28":
+        document.getElementById("switch24").href = "https://members.bib-arch.org/bible-review/11/1/9";
+        break;
+  case "https://members.bib-arch.org/bible-review/11/1/9":
+        document.getElementById("switch24").href = "https://members.bib-arch.org/biblical-archaeology-review/36/1/28";
         break;
   };
   return false;
