@@ -10,6 +10,15 @@
   <!-- <link rel="stylesheet" type="text/css" href="slider.css"> -->
 <style>
 
+#carouselButtons {
+
+    margin-left: 0px;
+    position: absolute;
+    top: 0px;
+    opacity: .5;
+    font-size: 20px;
+}
+
 .navbar {
     font-family: "trajan-pro-3","ff-meta-serif-web-pro",Georgia,Cambria,"Times New Roman",Times,serif;
     font-variant: small-caps;
@@ -188,33 +197,39 @@ img {
         <span class="glyphicon glyphicon-chevron-right" style="color:#046380"></span>
         <span class="sr-only">Next</span>
       </a>
+      <div id="carouselButtons">
+    <button id="pauseButton" type="button">
+      <span class="glyphicon glyphicon-pause" style="color:#046380"></span>
+    </button>
+  </div>
     </div>
   </div>
   <img src="images/logo.png" vspace="10"></img>
-<!-- <h4>Biblical Archaeology Society Online Timeline</h4>
-<p>These are the Canaanite slides.</p>
-<p>Click the links below to read the relevant articles:</p>
-<a href="https://members.bib-arch.org/biblical-archaeology-review/21/3/2">10 Great Finds</a></br>
-<a href="https://www.biblicalarchaeology.org/daily/ancient-cultures/daily-life-and-practice/bronze-age-figurine-resembles-rodins-the-thinker/">Bronze Age Figurine Resembles Rodin’s The Thinker</a></br>
-<a href="https://members.bib-arch.org/bible-review/15/1/13">“Proclaim Liberty Throughout the Land”</a></br>
-<a href="https://members.bib-arch.org/bible-review/11/5/10">Abraham’s Eight Crises</a></br>
-<a href="https://members.bib-arch.org/biblical-archaeology-review/28/4/2">Israelites and Canaanites</a></br>
-<a href="https://members.bib-arch.org/biblical-archaeology-review/29/1/12">The History Behind the Bible</a></br>
-<a href="https://members.bib-arch.org/biblical-archaeology-review/35/1/10">The Trowel vs. the Text</a></br>
-<a href="https://www.baslibrary.org/biblical-archaeology-review/9/1/5">BAR Jr.: Gamma Rays Halt Deterioration of Mummy of Ramesses II</a></br>
-<a href="https://members.bib-arch.org/bible-review/19/3/4">Moses’ Egyptian Name</a></br>
-<a href="https://members.bib-arch.org/biblical-archaeology-review/40/2/8">With &amp; Without Straw: How Israelite Slaves Made Bricks</a></br>
-<a href="https://www.baslibrary.org/biblical-archaeology-review/42/3/2">Exodus Evidence: An Egyptologist Looks at Biblical History</a></br>
-<a href="https://members.bib-arch.org/bible-review/16/6/8">The Divine Warrior in His Tent</a></br>
-<a href="https://members.bib-arch.org/biblical-archaeology-review/29/4/1">The Shechem Temple</a></br>
-<a href="https://members.bib-arch.org/biblical-archaeology-review/27/3/1">Pagan Yahwism: The Folk Religion of Ancient Israel</a></br>
-<a href="https://members.bib-arch.org/biblical-archaeology-review/17/6/1">Rainey’s Challenge</a></br>
-<a href="https://members.bib-arch.org/biblical-archaeology-review/41/1/12">Commemorating a Covenant</a></br>
-</div> -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+
+<script>
+
+$('#myCarousel').carousel({
+    interval:5000,
+     pause: "false"
+});
+
+$("button").click(function() {
+var current = $(this).attr("id")
+  switch(current) {
+    case "pauseButton":
+    $("span", this).toggleClass("glyphicon-pause glyphicon-play");
+    $('#myCarousel').carousel('pause');
+    $(this).attr("id", "playButton");
+
+    break;
+    case "playButton":
+    $("span", this).toggleClass("glyphicon-play glyphicon-pause");
+     $('#myCarousel').carousel('cycle');
+    $(this).attr("id", "pauseButton");
+
+    break;
+  }
+});
+</script>
 </body>
 </html>

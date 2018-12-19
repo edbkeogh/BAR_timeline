@@ -10,6 +10,15 @@
   <!-- <link rel="stylesheet" type="text/css" href="slider.css"> -->
 <style>
 
+#carouselButtons {
+
+    margin-left: 0px;
+    position: absolute;
+    top: 0px;
+    opacity: .5;
+    font-size: 20px;
+}
+
 .navbar {
     font-family: "trajan-pro-3","ff-meta-serif-web-pro",Georgia,Cambria,"Times New Roman",Times,serif;
     font-variant: small-caps;
@@ -89,7 +98,7 @@ img {
   <div class="container" style="width:fit-content;resize:horizontal;">
     <!-- <h2>Carousel Example</h2> -->
     <!-- data-interval="12000" for the autoslide -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -166,11 +175,40 @@ img {
         <span class="glyphicon glyphicon-chevron-right" style="color:#046380"></span>
         <span class="sr-only">Next</span>
       </a>
+      <div id="carouselButtons">
+    <button id="pauseButton" type="button">
+      <span class="glyphicon glyphicon-pause" style="color:#046380"></span>
+    </button>
+  </div>
     </div>
   </div>
   <img src="images/logo.png" vspace="10"></img>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
 <script>
+
+$('#myCarousel').carousel({
+    interval:5000,
+     pause: "false"
+});
+
+$("button").click(function() {
+var current = $(this).attr("id")
+  switch(current) {
+    case "pauseButton":
+    $("span", this).toggleClass("glyphicon-pause glyphicon-play");
+    $('#myCarousel').carousel('pause');
+    $(this).attr("id", "playButton");
+
+    break;
+    case "playButton":
+    $("span", this).toggleClass("glyphicon-play glyphicon-pause");
+     $('#myCarousel').carousel('cycle');
+    $(this).attr("id", "pauseButton");
+
+    break;
+  }
+});
+
 function myFunction1() {
   console.log(document.getElementById("switch1").href)
   var site = document.getElementById("switch1").href;

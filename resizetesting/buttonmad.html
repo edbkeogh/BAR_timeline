@@ -64,8 +64,8 @@ img {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li><a href="C.html">Canaanite<br/>c.3200 - c.1000</a></li>
-        <li class="active"><a href="SP2.html">Sea Peoples<br/>c.1400 - c.1000</a></li>
-        <li><a href="K2.html">Kings<br/>c.1000 - c.900</a></li>
+        <li><a href="SP2.html">Sea Peoples<br/>c.1400 - c.1000</a></li>
+        <li class="active"><a href="K2.html">Kings<br/>c.1000 - c.900</a></li>
         <li><a href="DK2.html">Divided Kingdom<br/>c.900 - c.550</a></li>
         <li><a href="P2.html">Persian<br/>c.550 - 333</a></li>
         <li><a href="Hel2.html">Hellenistic<br/>333 - 167</a></li>
@@ -97,7 +97,8 @@ img {
 <div class="main">
   <div class="container" style="width:fit-content;resize:horizontal;">
     <!-- <h2>Carousel Example</h2> -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="12000">
+    <!-- data-interval="12000" for the autoslide -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -110,52 +111,59 @@ img {
         <li data-target="#myCarousel" data-slide-to="7"></li>
         <li data-target="#myCarousel" data-slide-to="8"></li>
         <li data-target="#myCarousel" data-slide-to="9"></li>
-        <li data-target="#myCarousel" data-slide-to="10"></li>
-
+                <li data-target="#myCarousel" data-slide-to="10"></li>
+                        <li data-target="#myCarousel" data-slide-to="11"></li>
         <!-- <li data-target="#myCarousel" data-slide-to="19"></li> -->
       </ol>
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
         <div class="item active">
-          <a href="https://members.bib-arch.org/biblical-archaeology-review/19/5/9" target="_blank"><img src="SeaPeoples/Sea_Peoples/Slide1.JPG" alt="Enter Philistines"></a>
+          <a id="switch1" href="https://www.baslibrary.org/biblical-archaeology-review/6/2/1" target="_blank" onclick="myFunction1()"><img src="K/Slide1.JPG" alt="Pool of Gibeon"></a>
         </div>
 
         <div class="item">
-          <a href="https://members.bib-arch.org/biblical-archaeology-review/19/5/9" target="_blank"><img src="SeaPeoples/Sea_Peoples/Slide2.JPG" alt="Tjecker"></a>
+          <a href="https://www.baslibrary.org/biblical-archaeology-review/38/5/15" target="_blank"><img src="K/Slide2.JPG" alt="Bethlehem Seal"></a>
         </div>
 
         <div class="item">
-          <a href="https://members.bib-arch.org/biblical-archaeology-review/29/5/9" target="_blank"><img src="SeaPeoples/Sea_Peoples/Slide3.JPG" alt="Ramses III v Philistines"></a>
+          <a id="switch3" href="https://www.baslibrary.org/biblical-archaeology-review/43/1/6" target="_blank" onclick="myFunction3()"><img src="K/Slide3.JPG" alt="Saul at Elah"></a>
         </div>
 
 
       <div class="item">
-        <a href="https://members.bib-arch.org/biblical-archaeology-review/40/6/2" target="_blank"><img src="SeaPeoples/Sea_Peoples/Slide4.JPG" alt="Sea Peoples"></a>
+        <a href="https://www.baslibrary.org/biblical-archaeology-review/32/2/17" target="_blank"><img src="K/Slide4.JPG" alt="Goliath Pot Sherd"></a>
       </div>
 
       <div class="item">
-        <a href="https://members.bib-arch.org/biblical-archaeology-review/27/6/1" target="_blank"><img src="SeaPeoples/Sea_Peoples/Slide5.JPG" alt="Ark Route"></a>
+        <a href="https://www.baslibrary.org/biblical-archaeology-review/39/6/3" target="_blank"><img src="K/Slide5.JPG" alt="Qeiyafa Fortress"></a>
       </div>
     <div class="item">
-      <a id="test" href="https://members.bib-arch.org/collections/where-did-early-israelites-come" target="_blank" onclick="myFunction()"><img src="SeaPeoples/Sea_Peoples/Slide6.JPG" alt="Joshua's Altar"></a>
+      <a href="https://www.baslibrary.org/biblical-archaeology-review/13/6/5" target="_blank"><img src="K/Slide6.JPG" alt="Eshtemoa Silver"></a>
     </div>
   <div class="item">
-    <a href="https://members.bib-arch.org/biblical-archaeology-review/39/3/4" target="_blank">
-      <img src="SeaPeoples/Sea_Peoples/Slide7.JPG" alt="Philistine Temple"></a>
+    <a href="https://www.baslibrary.org/biblical-archaeology-review/29/5/13" target="_blank"><img src="K/Slide7.JPG" alt="Jebusite Water Shaft"></a>
   </div>
   <div class="item">
-    <a href="https://members.bib-arch.org/biblical-archaeology-review/12/1/7" target="_blank"><img src="SeaPeoples/Sea_Peoples/Slide8.JPG" alt="Shiloh"></a>
+    <a href="https://www.baslibrary.org/biblical-archaeology-review/8/5/2" target="_blank"><img src="K/Slide8.JPG" alt="Ammonite King"></a>
   </div>
   <div class="item">
-    <a href="https://members.bib-arch.org/biblical-archaeology-review/12/1/7" target="_blank"><img src="SeaPeoples/Sea_Peoples/Slide9.JPG" alt="Battles with Philistines"></a>
+    <a href="https://www.baslibrary.org/biblical-archaeology-review/21/1/7" target="_blank"><img src="K/Slide9.JPG" alt="Hazael"></a>
   </div>
   <div class="item">
-    <a href="https://members.bib-arch.org/biblical-archaeology-review/35/6/28" target="_blank"><img src="SeaPeoples/Sea_Peoples/Slide10.JPG" alt="Judges"></a>
+    <a id="switch10" href="https://www.baslibrary.org/biblical-archaeology-review/20/4/13" target="_blank" onclick="myFunction10()"><img src="K/Slide10.JPG" alt="Tel Dan Stele"></a>
   </div>
   <div class="item">
-    <a href="https://members.bib-arch.org/biblical-archaeology-review/35/6/28" target="_blank"><img src="SeaPeoples/Sea_Peoples/Slide11.JPG" alt="Four Room House"></a>
+    <a href="https://www.baslibrary.org/biblical-archaeology-review/32/1/4" target="_blank"><img src="K/Slide11.JPG" alt="David's Palace"></a>
   </div>
+  <div class="item">
+    <a href="https://www.baslibrary.org/biblical-archaeology-review/40/1/12" target="_blank"><img src="K/Slide12.JPG" alt="Temple Mount"></a>
+  </div>
+<!--  sample switcher for multi links -
+   <div class="item">
+    <a id="test" href="https://members.bib-arch.org/collections/where-did-early-israelites-come" target="_blank" onclick="setTimeout(myFunction, 500)"><img src="SeaPeoples/Sea_Peoples/Slide6.JPG" alt="Joshua's Altar"></a>
+  </div>-->
+
   </div>
 
       <!-- Left and right controls -->
@@ -179,7 +187,7 @@ img {
 <script>
 
 $('#myCarousel').carousel({
-    interval:5000,
+    interval:1000,
      pause: "false"
 });
 
@@ -199,25 +207,83 @@ var current = $(this).attr("id")
 
     break;
   }
+ // if ($(this).attr("id") === "pauseButton") {
+ //   $('#myCarousel').carousel('pause');
+ //   $(this).attr("id", "playButton");
+ //   $("span", this).toggleClass("glyphicon-play glyphicon-pause");
+ // } else {
+ //   $('#myCarousel').carousel('cycle');
+ //   $(this).attr("id", "pauseButton");
+ //   $("span", this).toggleClass("glyphicon-pause glyphicon-play");
+ // }
 });
 
-function myFunction() {
-  console.log(document.getElementById("test").href)
-  var site = document.getElementById("test").href;
+
+
+// $('#playButton').click(function () {
+//     $('#myCarousel').carousel('cycle');
+// });
+// $('#pauseButton').click(function () {
+//     $('#myCarousel').carousel('pause');
+// });
+// $(function () {
+//     // $('#myCarousel').carousel({
+//     //     interval:800,
+//     //      pause: "false"
+//     // });
+//     $('#playButton').click(function () {
+//       c = $('#myCarousel')
+//       opt = c.data()['bs.carousel'].options
+//       opt.interval= 10000;
+//       c.data({options: opt})
+//     });
+//     $('#pauseButton').click(function () {
+//       c = $('#homeCarousel')
+//       opt = c.data()['bs.carousel'].options
+//       opt.interval= false;
+//       c.data({options: opt})
+//     });
+
+
+function myFunction1() {
+  console.log(document.getElementById("switch1").href)
+  var site = document.getElementById("switch1").href;
 switch(site) {
-  case "https://members.bib-arch.org/collections/where-did-early-israelites-come":
-        document.getElementById("test").href = "https://members.bib-arch.org/biblical-archaeology-review/11/1/5";
+  case "https://www.baslibrary.org/biblical-archaeology-review/6/2/1":
+        document.getElementById("switch1").href = "https://www.baslibrary.org/biblical-archaeology-review/21/3/2";
         break;
-  case "https://members.bib-arch.org/biblical-archaeology-review/11/1/5":
-        document.getElementById("test").href = "https://members.bib-arch.org/collections/where-did-early-israelites-come";
+  case "https://www.baslibrary.org/biblical-archaeology-review/21/3/2":
+        document.getElementById("switch1").href = "https://www.baslibrary.org/biblical-archaeology-review/6/2/1";
+        break;
+  };
+  return false;
+};
+function myFunction3() {
+  console.log(document.getElementById("switch3").href)
+  var site = document.getElementById("switch3").href;
+switch(site) {
+  case "https://www.baslibrary.org/biblical-archaeology-review/43/1/6":
+        document.getElementById("switch3").href = "https://www.baslibrary.org/biblical-archaeology-review/38/3/4";
+        break;
+  case "https://www.baslibrary.org/biblical-archaeology-review/38/3/4":
+        document.getElementById("switch3").href = "https://www.baslibrary.org/biblical-archaeology-review/43/1/6";
+        break;
+  };
+  return false;
+};
+function myFunction10() {
+  console.log(document.getElementById("switch10").href)
+  var site = document.getElementById("switch10").href;
+switch(site) {
+  case "https://www.baslibrary.org/biblical-archaeology-review/20/4/13":
+        document.getElementById("switch10").href = "https://www.baslibrary.org/biblical-archaeology-review/20/6/3";
+        break;
+  case "https://www.baslibrary.org/biblical-archaeology-review/20/6/3":
+        document.getElementById("switch10").href = "https://www.baslibrary.org/biblical-archaeology-review/20/4/13";
         break;
   };
   return false;
 };
 </script>
-    <!-- <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
 </body>
 </html>
