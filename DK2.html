@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BAS Timeline</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="jquery.bcSwipe.min.js"></script>
+  <!-- <link rel="stylesheet" type="text/css" href="slider.css"> -->
+<style>
+
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+        top: 10px;
+}
+
+.carousel-control .glyphicon-chevron-left:before,
+.carousel-control .glyphicon-chevron-right:before {
+    font-size: 20px;
+}
+
+#carouselButtons {
+
+    margin-left: 0px;
+    position: absolute;
+    top: 0px;
+    opacity: .5;
+    font-size: 30px;
+}
+.navbar {
+    font-family: "trajan-pro-3","ff-meta-serif-web-pro",Georgia,Cambria,"Times New Roman",Times,serif;
+    font-variant: small-caps;
+}
+
+.main {
+  /* padding-top: 10px;
+  margin-top: 10px; */
+  font-family: "trajan-pro-3","ff-meta-serif-web-pro",Georgia,Cambria,"Times New Roman",Times,serif;
+  /* height: 1500px; /* Used in this example to enable scrolling */ */
+}
+
+h4 {
+  font-variant: small-caps;
+}
+img {
+  display:block;
+  max-height: 80vh;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+</style>
+<link rel="shortcut icon" href="https://members.bib-arch.org/sites/default/files/bibarch-avatar-743473643-5.png" type="image/png">
+</head>
+<body>
+  <!-- <script>
+
+  </script> -->
+  <!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container-fluid">
+    <div class="navbar-header" background-color="#046380">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <!-- <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> -->
+      </button>
+      <a class="navbar-brand" href="timeline.html">BAS Timeline</a>
+    </div>
+    <div class="container">
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="C.html">Canaanite<br/>c.3200 - c.1000</a></li>
+        <li><a href="SP2.html">Sea Peoples<br/>c.1400 - c.1000</a></li>
+        <li><a href="K2.html">Kings<br/>c.1000 - c.900</a></li>
+        <li class="active"><a href="DK2.html">Divided Kingdom<br/>c.900 - c.550</a></li>
+        <li><a href="P2.html">Persian<br/>c.550 - 333</a></li>
+        <li><a href="Hel2.html">Hellenistic<br/>333 - 167</a></li>
+        <li><a href="Has2.html">Hasmonean<br/>167 - 63</a></li>
+        <li><a href="Her2.html">Herodian<br/>43 BCE - 44 CE</a></li>
+        <li><a href="Rom2.html">Roman<br/>63 BCE - 614 CE</a></li>
+        <!-- <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li class="dropdown-header">Nav header</li>
+            <li><a href="#">Separated link</a></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li> -->
+      </ul>
+      <!-- <ul class="nav navbar-nav navbar-right">
+        <li><a href="../navbar/">Default</a></li>
+        <li><a href="../navbar-static-top/">Static top</a></li>
+        <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
+      </ul> -->
+    </div>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+<div class="main">
+  <div class="container" style="width:fit-content;resize:horizontal;">
+    <!-- <h2>Carousel Example</h2> -->
+    <!-- data-interval="12000" for the autoslide -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+        <li data-target="#myCarousel" data-slide-to="6"></li>
+        <li data-target="#myCarousel" data-slide-to="7"></li>
+        <li data-target="#myCarousel" data-slide-to="8"></li>
+        <li data-target="#myCarousel" data-slide-to="9"></li>
+                <li data-target="#myCarousel" data-slide-to="10"></li>
+                        <li data-target="#myCarousel" data-slide-to="11"></li>
+                        <li data-target="#myCarousel" data-slide-to="12"></li>
+                        <li data-target="#myCarousel" data-slide-to="13"></li>
+                        <li data-target="#myCarousel" data-slide-to="14"></li>
+                        <li data-target="#myCarousel" data-slide-to="15"></li>
+                        <li data-target="#myCarousel" data-slide-to="16"></li>
+                        <li data-target="#myCarousel" data-slide-to="17"></li>
+                        <li data-target="#myCarousel" data-slide-to="18"></li>
+                        <li data-target="#myCarousel" data-slide-to="19"></li>
+        <li data-target="#myCarousel" data-slide-to="20"></li>
+        <li data-target="#myCarousel" data-slide-to="21"></li>
+        <li data-target="#myCarousel" data-slide-to="22"></li>
+        <li data-target="#myCarousel" data-slide-to="23"></li>
+        <li data-target="#myCarousel" data-slide-to="24"></li>
+
+        <!-- <li data-target="#myCarousel" data-slide-to="19"></li> -->
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <a href="https://members.bib-arch.org/biblical-archaeology-review/27/5/2" target="_blank"><img src="DK/Slide1.JPG" alt="United Kingdom"></a>
+        </div>
+
+        <div class="item">
+          <a href="" target="_blank"><img src="DK/Slide2.JPG" alt=""></a>
+        </div>
+
+        <div class="item">
+          <a id="switch3" href="" target="_blank" onclick="myFunction3()"><img src="DK/Slide3.JPG" alt=""></a>
+        </div>
+
+
+      <div class="item">
+        <a href="" target="_blank"><img src="DK/Slide4.JPG" alt=""></a>
+      </div>
+
+      <div class="item">
+        <a href="" target="_blank"><img src="DK/Slide5.JPG" alt=""></a>
+      </div>
+    <div class="item">
+      <a href="" target="_blank"><img src="DK/Slide6.JPG" alt=""></a>
+    </div>
+  <div class="item">
+    <a href="" target="_blank"><img src="DK/Slide7.JPG" alt=""></a>
+  </div>
+  <div class="item">
+    <a href="" target="_blank"><img src="DK/Slide8.JPG" alt=""></a>
+  </div>
+  <div class="item">
+    <a href="" target="_blank"><img src="DK/Slide9.JPG" alt=""></a>
+  </div>
+  <div class="item">
+    <a id="switch10" href="" target="_blank" onclick="myFunction10()"><img src="DK/Slide10.JPG" alt=""></a>
+  </div>
+  <div class="item">
+    <a href="" target="_blank"><img src="DK/Slide11.JPG" alt=""></a>
+  </div>
+  <div class="item">
+    <a href="" target="_blank"><img src="DK/Slide12.JPG" alt=""></a>
+  </div>
+  <div class="item">
+    <a href="" target="_blank"><img src="DK/Slide13.JPG" alt=""></a>
+  </div>
+  <div class="item">
+    <a href="" target="_blank"><img src="DK/Slide14.JPG" alt=""></a>
+  </div>
+<div class="item">
+  <a href="" target="_blank"><img src="DK/Slide15.JPG" alt=""></a>
+</div>
+<div class="item">
+  <a href="" target="_blank"><img src="DK/Slide16.JPG" alt=""></a>
+</div>
+<div class="item">
+  <a href="" target="_blank"><img src="DK/Slide17.JPG" alt=""></a>
+</div>
+<div class="item">
+  <a href="" target="_blank"><img src="DK/Slide18.JPG" alt=""></a>
+</div>
+<div class="item">
+  <a href="" target="_blank"><img src="DK/Slide19.JPG" alt=""></a>
+</div>
+<div class="item">
+  <a href="" target="_blank"><img src="DK/Slide20.JPG" alt=""></a>
+</div>
+<div class="item">
+  <a href="" target="_blank"><img src="DK/Slide21.JPG" alt=""></a>
+</div>
+<div class="item">
+  <a href="" target="_blank"><img src="DK/Slide22.JPG" alt=""></a>
+</div>
+<div class="item">
+  <a href="" target="_blank"><img src="DK/Slide23.JPG" alt=""></a>
+</div>
+<div class="item">
+  <a id="switch24" href="" target="_blank" onclick="myFunction24()"><img src="DK/Slide24.JPG" alt=""></a>
+</div>
+<div class="item">
+  <a href="" target="_blank"><img src="DK/Slide25.JPG" alt=""></a>
+</div>
+<!-- <div class="item">
+  <a href="" target="_blank"><img src="K/Slide26.JPG" alt=""></a>
+</div> -->
+<!--  sample switcher for multi links -
+   <div class="item">
+    <a id="test" href="https://members.bib-arch.org/collections/where-did-early-israelites-come" target="_blank" onclick="setTimeout(myFunction, 500)"><img src="SeaPeoples/Sea_Peoples/Slide6.JPG" alt="Joshua's Altar"></a>
+  </div>-->
+
+  </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" style="color:#046380"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" style="color:#046380"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      <div id="carouselButtons">
+    <button id="pauseButton" type="button">
+      <span class="glyphicon glyphicon-pause" style="color:#046380"></span>
+    </button>
+  </div>
+    </div>
+  </div>
+
+  <img src="images/logo.png" vspace="10"></img>
+</div>
+
+<script>
+
+$('#myCarousel').carousel({
+    interval:5000,
+     pause: "false"
+});
+
+$("button").click(function() {
+var current = $(this).attr("id")
+  switch(current) {
+    case "pauseButton":
+    $("span", this).toggleClass("glyphicon-pause glyphicon-play");
+    $('#myCarousel').carousel('pause');
+    $(this).attr("id", "playButton");
+
+    break;
+    case "playButton":
+    $("span", this).toggleClass("glyphicon-play glyphicon-pause");
+     $('#myCarousel').carousel('cycle');
+    $(this).attr("id", "pauseButton");
+
+    break;
+  }
+});
+
+function myFunction1() {
+  console.log(document.getElementById("switch1").href)
+  var site = document.getElementById("switch1").href;
+switch(site) {
+  case "https://www.baslibrary.org/biblical-archaeology-review/6/2/1":
+        document.getElementById("switch1").href = "https://www.baslibrary.org/biblical-archaeology-review/21/3/2";
+        break;
+  case "https://www.baslibrary.org/biblical-archaeology-review/21/3/2":
+        document.getElementById("switch1").href = "https://www.baslibrary.org/biblical-archaeology-review/6/2/1";
+        break;
+  };
+  return false;
+};
+function myFunction3() {
+  console.log(document.getElementById("switch3").href)
+  var site = document.getElementById("switch3").href;
+switch(site) {
+  case "https://www.baslibrary.org/biblical-archaeology-review/43/1/6":
+        document.getElementById("switch3").href = "https://www.baslibrary.org/biblical-archaeology-review/38/3/4";
+        break;
+  case "https://www.baslibrary.org/biblical-archaeology-review/38/3/4":
+        document.getElementById("switch3").href = "https://www.baslibrary.org/biblical-archaeology-review/43/1/6";
+        break;
+  };
+  return false;
+};
+function myFunction10() {
+  console.log(document.getElementById("switch10").href)
+  var site = document.getElementById("switch10").href;
+switch(site) {
+  case "https://www.baslibrary.org/biblical-archaeology-review/20/4/13":
+        document.getElementById("switch10").href = "https://www.baslibrary.org/biblical-archaeology-review/20/6/3";
+        break;
+  case "https://www.baslibrary.org/biblical-archaeology-review/20/6/3":
+        document.getElementById("switch10").href = "https://www.baslibrary.org/biblical-archaeology-review/20/4/13";
+        break;
+  };
+  return false;
+};
+function myFunction24() {
+  console.log(document.getElementById("switch24").href)
+  var site = document.getElementById("switch24").href;
+switch(site) {
+  case "https://members.bib-arch.org/biblical-archaeology-review/36/1/28":
+        document.getElementById("switch24").href = "https://members.bib-arch.org/bible-review/11/1/9";
+        break;
+  case "https://members.bib-arch.org/bible-review/11/1/9":
+        document.getElementById("switch24").href = "https://members.bib-arch.org/biblical-archaeology-review/36/1/28";
+        break;
+  };
+  return false;
+};
+$('.carousel').bcSwipe({ threshold: 50 });
+</script>
+</body>
+</html>
