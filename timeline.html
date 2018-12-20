@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="bootstrap.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" href="https://members.bib-arch.org/sites/default/files/bibarch-avatar-743473643-5.png" type="image/png">
   <!-- <link rel="stylesheet" type="text/css" href="slider.css"> -->
 <style>
 .navbar {
@@ -15,112 +16,185 @@
 }
 
 .main {
-  padding: 16px;
-  margin-top: 50px;
+  /* padding: 10px; */
+  /* margin-top: 20px; */
   font-family: "trajan-pro-3","ff-meta-serif-web-pro",Georgia,Cambria,"Times New Roman",Times,serif;
+  text-align: center;
   /* height: 1500px; /* Used in this example to enable scrolling */ */
 }
 
 .bottom-thing {
   margin-top: 50px;
 }
-h4 {
+h3 {
   font-variant: small-caps;
+}
+
+img {
+  display:block;
+  /* max-height: 80vh; */
+  margin-left: auto;
+  margin-right:auto;
 }
 /*.body {
   color: #CC5E28
 }*/
 
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+    text-align: center;
+    /* background-color: #ccc;
+    border: 1px solid #ddd; */
+}
+
 </style>
 </head>
 <body>
   <!-- Fixed navbar -->
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header" background-color="#046380">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <!-- <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span> -->
-      </button>
-      <a class="navbar-brand" href="timeline.html">Timeline</a>
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container-fluid">
+      <div class="navbar-header" background-color="#046380">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <!-- <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span> -->
+        </button>
+        <a class="navbar-brand" href="timeline.html">BAS Timeline</a>
+      </div>
+      <div class="container">
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="C.html">Canaanite<br/>c.3200 - c.1000</a></li>
+          <li><a href="SP2.html">Sea Peoples<br/>c.1300 - c.900</a></li>
+          <li><a href="K2.html">Kings<br/>c.1000 - c.900</a></li>
+          <li><a href="DK2.html">Divided Kingdom<br/>c.900 - c.550</a></li>
+          <li><a href="P2.html">Persian<br/>c.550 - 333</a></li>
+          <li><a href="Hel2.html">Hellenistic<br/>333 - 167</a></li>
+          <li><a href="Has2.html">Hasmonean<br/>167 - 63</a></li>
+          <li><a href="Her2.html">Herodian<br/>43 BCE - 44 CE</a></li>
+          <li><a href="Rom2.html">Roman<br/>63 BCE - 614 CE</a></li>
+          <!-- <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li class="dropdown-header">Nav header</li>
+              <li><a href="#">Separated link</a></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li> -->
+        </ul>
+        <!-- <ul class="nav navbar-nav navbar-right">
+          <li><a href="../navbar/">Default</a></li>
+          <li><a href="../navbar-static-top/">Static top</a></li>
+          <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
+        </ul> -->
+      </div>
+      </div><!--/.nav-collapse -->
     </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li><a href="C.html">Canaanite</a></li>
-        <li><a href="SP2.html">Sea Peoples</a></li>
-        <li><a href="K2.html">Kings</a></li>
-        <li><a href="DK2.html">Divided Kingdom</a></li>
-        <li><a href="P2.html">Persian</a></li>
-        <li><a href="Hel2.html">Hellenistic</a></li>
-        <li><a href="Has2.html">Hasmonean</a></li>
-        <li><a href="Her2.html">Herodian</a></li>
-        <li><a href="Rom2.html">Roman</a></li>
-
-        <!-- <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li class="dropdown-header">Nav header</li>
-            <li><a href="#">Separated link</a></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li> -->
-      </ul>
-      <!-- <ul class="nav navbar-nav navbar-right">
-        <li><a href="../navbar/">Default</a></li>
-        <li><a href="../navbar-static-top/">Static top</a></li>
-        <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
-      </ul> -->
-    </div><!--/.nav-collapse -->
-  </div>
-</nav>
+  </nav>
 <div class="main">
-  <img src="images/logo.png"></img>
-<h4>Biblical Archaeology Society Online Timeline</h4>
-<p>Welcome to the BAS Timeline. Select an era from the menu on the top to view the slides.</p>
-<p>You may click the images below to download print-friendly versions of the presentations:</p>
-<div class="container">
-  <div class="row text-center">
-    <div class="col-xs-2">
+<h5>Welcome to the BAS Timeline. Select an era from the menu on the top to view the slides.</h5>
+<h2>Many thanks to George Blumenthal for his generous support</h2>
+  <img src="images/GSBlumenthal.jpg" style="max-height: 40vh;"></img>
+<h3>Biblical Archaeology Society Online Timeline</h3>
+<h5>You may click the images below for color PDFs or the links for alternate formats of the presentations:</h5>
+<div class="container-fluid">
+  <div class="row row-centered">
+    <div class="col-xs-2 col-centered">
       <figure>
         <a href="pdfs/Canaanite.pdf" download>
-          <img src="Canaanite/C/Slide1.JPG" alt="Canaanite" width="100%">
+          <img src="Canaanite/C/Slide0.JPG" alt="Canaanite" width="100%">
         </a>
-        <figcaption>Canaanite</figcaption>
+        <figcaption><a href="pdfs/Canaanite.pptx" download>Powerpoint</a><br/><a href="BW_Canaanite.pdf" download>Black and White PDF</a></figcaption>
       </figure>
     </div>
-    <div class="col-xs-2">
+    <div class="col-xs-2 col-centered">
       <figure>
         <a href="pdfs/Sea_Peoples.pdf" download>
-          <img src="SeaPeoples/Sea_Peoples/Slide1.JPG" alt="Sea Peoples" width="100%">
+          <img src="SeaPeoples\Sea_Peoples\Slide0.JPG" alt="Sea Peoples" width="100%">
         </a>
-        <figcaption>Sea Peoples</figcaption>
-      </figure>
-    </div>
-    <div class="col-xs-2">
-      <figure>
-        <a href="pdfs/Kings.pdf" download>
-          <img src="K/Slide1.JPG" alt="Kings" width="100%">
-        </a>
-        <figcaption>Kings</figcaption>
+        <figcaption><a href="pdfs/Sea_Peoples.pptx" download>Powerpoint</a><br/><a href="BW_Sea_Peoples.pdf" download>Black and White PDF</a></figcaption>
       </figure>
     </div>
 
+    <div class="col-xs-2 col-centered">
+      <figure>
+        <a href="pdfs/Kings.pdf" download>
+          <img src="K/Slide0.JPG" alt="Kings" width="100%">
+        </a>
+        <figcaption><a href="pdfs/Kings.pptx" download>Powerpoint</a><br/><a href="BW_Kings.pdf" download>Black and White PDF</a></figcaption>
+      </figure>
+    </div>
+    <div class="col-xs-2 col-centered">
+      <figure>
+        <a href="pdfs/Divided_Kingdom.pdf" download>
+          <img src="DK/Slide0.JPG" alt="Divided Kingdom" width="100%">
+        </a>
+        <figcaption><a href="pdfs/Divided_Kingdom.pptx" download>Powerpoint</a><br/><a href="BW_Divided_Kingdom.pdf" download>Black and White PDF</a></figcaption>
+      </figure>
+    </div>
+    <div class="col-xs-2 col-centered">
+      <figure>
+        <a href="pdfs/Persian.pdf" download>
+          <img src="P/Slide0.JPG" alt="Persian" width="100%">
+        </a>
+        <figcaption><a href="pdfs/Persian.pptx" download>Powerpoint</a><br/><a href="BW_Persian.pdf" download>Black and White PDF</a></figcaption>
+      </figure>
+    </div>
+    </div>
+    <div class="row row-centered">
+    <div class="col-xs-2 col-centered">
+      <figure>
+        <a href="pdfs/Hellenistic.pdf" download>
+          <img src="Hel/Slide0.JPG" alt="Hellenistic" width="100%">
+        </a>
+        <figcaption><a href="pdfs/Hellenistic.pptx" download>Powerpoint</a><br/><a href="BW_Hellenistic.pdf" download>Black and White PDF</a></figcaption>
+      </figure>
+    </div>
+    <div class="col-xs-2 col-centered">
+      <figure>
+        <a href="pdfs/Hasmonean.pdf" download>
+          <img src="Has/Slide0.JPG" alt="Hasmonean" width="100%">
+        </a>
+        <figcaption><a href="pdfs/Hasmonean.pptx" download>Powerpoint</a><br/><a href="BW_Hasmonean.pdf" download>Black and White PDF</a></figcaption>
+      </figure>
+    </div>
+    <div class="col-xs-2 col-centered">
+      <figure>
+        <a href="pdfs/Herodian.pdf" download>
+          <img src="Her/Slide0.JPG" alt="Herodian" width="100%">
+        </a>
+        <figcaption><a href="pdfs/Herodian.pptx" download>Powerpoint</a><br/><a href="BW_Herodian.pdf" download>Black and White PDF</a></figcaption>
+      </figure>
+    </div>
+    <div class="col-xs-2 col-centered">
+      <figure>
+        <a href="pdfs/Roman.pdf" download>
+          <img src="Rom/Slide0.JPG" alt="Roman" width="100%">
+        </a>
+        <figcaption><a href="pdfs/Roman.pptx" download>Powerpoint</a><br/><a href="BW_Roman.pdf" download>Black and White PDF</a></figcaption>
+      </figure>
+    </div>
   </div>
 </div>
 <div class="bottom-thing">
+  <img src="images/logo.png" ></img>
 <p align="center">This site is under development. New content is currently being processed.</p>
 </div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+
 </body>
 </html>
