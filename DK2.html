@@ -82,7 +82,7 @@ img {
         <li><a href="Has2.html">Hasmonean<br/>167 - 63</a></li>
         <li><a href="Her2.html">Herodian<br/>43 BCE - 44 CE</a></li>
         <li><a href="Rom2.html">Roman<br/>63 BCE - 312 CE</a></li>
-        <li><a href="Byz.html">Byzantine<br/>312 - 637</a></li>
+        <!-- <li><a href="Byz.html">Byzantine<br/>312 - 637</a></li> -->
         <!-- <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -192,7 +192,7 @@ img {
       </div>
 
       <div class="item">
-        <a href="https://members.bib-arch.org/biblical-archaeology-review/20/1/5" target="_blank"><img src="DK/Slide5.JPG" alt="Shishak Stele"></a>
+        <a id="switch5" href="https://members.bib-arch.org/biblical-archaeology-review/20/1/5" target="_blank" onclick="myFunction5()"><img src="DK/Slide5.JPG" alt="Shishak Stele"></a>
       </div>
     <div class="item">
       <a href="https://members.bib-arch.org/biblical-archaeology-review/23/5/1" target="_blank"><img src="DK/Slide6.JPG" alt="King Asa's Wall"></a>
@@ -401,7 +401,7 @@ function myFunction11() {
   var site = document.getElementById("switch11").href;
 switch(site) {
   case "https://members.bib-arch.org/biblical-archaeology-review/37/3/6":
-        document.getElementById("switch11").href = "https://members.bib-arch.org/biblical-archaeology-review/31/4/4";
+        document.getElementById("switch11").href = "https://members.bib-arch.org/biblical-archaeology-review/40/2/4";
         break;
   case "https://members.bib-arch.org/biblical-archaeology-review/40/2/4":
         document.getElementById("switch11").href = "https://members.bib-arch.org/biblical-archaeology-review/43/3/5";
@@ -424,6 +424,19 @@ switch(site) {
         break;
   case "https://members.bib-arch.org/biblical-archaeology-review/25/6/1":
         document.getElementById("switch23").href = "https://members.bib-arch.org/biblical-archaeology-review/18/3/1";
+        break;
+  };
+  return false;
+};
+function myFunction5() {
+  console.log(document.getElementById("switch5").href)
+  var site = document.getElementById("switch5").href;
+switch(site) {
+  case "https://members.bib-arch.org/biblical-archaeology-review/20/1/5":
+        document.getElementById("switch5").href = "https://members.bib-arch.org/biblical-archaeology-review/38/4/5";
+        break;
+  case "https://members.bib-arch.org/biblical-archaeology-review/38/4/5":
+        document.getElementById("switch5").href = "https://members.bib-arch.org/biblical-archaeology-review/20/1/5";
         break;
   };
   return false;
