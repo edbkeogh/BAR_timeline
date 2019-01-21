@@ -116,8 +116,8 @@ img {
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
         <li data-target="#myCarousel" data-slide-to="3"></li>
-        <!-- <li data-target="#myCarousel" data-slide-to="4"></li>
-        <li data-target="#myCarousel" data-slide-to="5"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <!--   <li data-target="#myCarousel" data-slide-to="5"></li>
         <li data-target="#myCarousel" data-slide-to="6"></li>
         <li data-target="#myCarousel" data-slide-to="7"></li>
         <li data-target="#myCarousel" data-slide-to="8"></li> -->
@@ -133,15 +133,18 @@ img {
           <a href="pdfs/Hasmonean.pdf" download><img src="Has/Slide0.JPG" alt="Hasmonean"></a>
         </div>
         <div class="item">
-          <a href="https://members.bib-arch.org/bible-review/9/6/9" target="_blank"><img src="Has/Slide1.JPG" alt="Suffering Servant"></a>
+          <a href="https://members.bib-arch.org/biblical-archaeology-review/40/2/7" target="_blank"><img src="Has/Slide1.JPG" alt="Mattathias"></a>
+        </div>
+        <div class="item">
+          <a href="https://members.bib-arch.org/bible-review/9/6/9" target="_blank"><img src="Has/Slide2.JPG" alt="Suffering Servant"></a>
         </div>
 
         <div class="item">
-          <a href="https://members.bib-arch.org/images/bsao040104900ljpg" target="_blank"><img src="Has/Slide2.JPG" alt="Julius Caesar"></a>
+          <a id="switch2" href="https://members.bib-arch.org/archaeology-odyssey/4/1/14" target="_blank" onclick="myFunction2()"><img src="Has/Slide3.JPG" alt="Julius Caesar"></a>
         </div>
 
         <div class="item">
-          <a href="https://members.bib-arch.org/biblical-archaeology-review/31/4/2" target="_blank"><img src="Has/Slide3.JPG" alt="Herod v Hasmoneans"></a>
+          <a href="https://members.bib-arch.org/biblical-archaeology-review/31/4/2" target="_blank"><img src="Has/Slide4.JPG" alt="Herod v Hasmoneans"></a>
         </div>
 
 <!--
@@ -233,15 +236,15 @@ switch(site) {
   };
   return false;
 };
-function myFunction3() {
-  console.log(document.getElementById("switch3").href)
-  var site = document.getElementById("switch3").href;
+function myFunction2() {
+  console.log(document.getElementById("switch2").href)
+  var site = document.getElementById("switch2").href;
 switch(site) {
-  case "https://www.baslibrary.org/biblical-archaeology-review/43/1/6":
-        document.getElementById("switch3").href = "https://www.baslibrary.org/biblical-archaeology-review/38/3/4";
+  case "https://members.bib-arch.org/archaeology-odyssey/4/1/14":
+        document.getElementById("switch2").href = "https://members.bib-arch.org/biblical-archaeology-review/44/6/7";
         break;
-  case "https://www.baslibrary.org/biblical-archaeology-review/38/3/4":
-        document.getElementById("switch3").href = "https://www.baslibrary.org/biblical-archaeology-review/43/1/6";
+  case "https://members.bib-arch.org/biblical-archaeology-review/44/6/7":
+        document.getElementById("switch2").href = "https://members.bib-arch.org/archaeology-odyssey/4/1/14";
         break;
   };
   return false;
