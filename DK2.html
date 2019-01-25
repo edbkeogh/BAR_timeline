@@ -165,8 +165,8 @@ img {
         <li data-target="#myCarousel" data-slide-to="50"></li>
         <li data-target="#myCarousel" data-slide-to="51"></li>
         <li data-target="#myCarousel" data-slide-to="52"></li>
-        <li data-target="#myCarousel" data-slide-to="53"></li>
-        <li data-target="#myCarousel" data-slide-to="54"></li>
+        <!-- <li data-target="#myCarousel" data-slide-to="53"></li> -->
+        <!-- <li data-target="#myCarousel" data-slide-to="54"></li> -->
 
         <!-- <li data-target="#myCarousel" data-slide-to="19"></li> -->
       </ol>
@@ -261,7 +261,7 @@ img {
   <a id="switch27" href="https://members.bib-arch.org/biblical-archaeology-review/39/5/4" target="_blank" onclick="myFunction27()"><img src="DK/Slide27.JPG" alt="Siloam Inscription 2"></a>
 </div>
 <div class="item">
-  <a href="https://members.bib-arch.org/biblical-archaeology-review/20/3/3" target="_blank"><img src="DK/Slide28.JPG" alt="Tomb of Shebna"></a>
+  <a id="s28" href="https://members.bib-arch.org/biblical-archaeology-review/20/3/3" target="_blank" onclick="myFunction28()"><img src="DK/Slide28.JPG" alt="Tomb of Shebna"></a>
 </div>
 <div class="item">
   <a href="https://members.bib-arch.org/biblical-archaeology-review/31/3/5" target="_blank"><img src="DK/Slide29.JPG" alt="Battle of Lachish"></a>
@@ -293,9 +293,9 @@ img {
 <div class="item">
   <a href="https://www.biblicalarchaeology.org/daily/biblical-artifacts/inscriptions/jerusalem-papyrus/" target="_blank"><img src="DK/Slide38.JPG" alt="Jerusalem Papyrus"></a>
 </div>
-<div class="item">
+<!-- <div class="item">
   <a href="https://members.bib-arch.org/biblical-archaeology-review/14/5/4" target="_blank"><img src="DK/Slide39.JPG" alt="Pits"></a>
-</div>
+</div> -->
 <div class="item">
   <a href="https://members.bib-arch.org/biblical-archaeology-review/5/6/1" target="_blank"><img src="DK/Slide40.JPG" alt="Lachish Letters"></a>
 </div>
@@ -326,11 +326,11 @@ img {
 <div class="item">
   <a href="https://members.bib-arch.org/biblical-archaeology-review/35/4/15" target="_blank"><img src="DK/Slide49.JPG" alt="Temple Destruction"></a>
 </div>
-<div class="item">
+<!-- <div class="item">
   <a id="switch50" href="https://members.bib-arch.org/biblical-archaeology-review/35/2/7" target="_blank" onclick="myFunction50()"><img src="DK/Slide50.JPG" alt="Debris from Destruction"></a>
-</div>
+</div> -->
 <div class="item">
-  <a href="https://members.bib-arch.org/biblical-archaeology-review/14/3/3" target="_blank"><img src="DK/Slide51.JPG" alt="Ahiel's House"></a>
+  <a id="s51" href="https://members.bib-arch.org/biblical-archaeology-review/14/3/3" target="_blank" onclick="myFunction51()"><img src="DK/Slide51.JPG" alt="Ahiel's House"></a>
 </div>
 <div class="item">
   <a href="https://members.bib-arch.org/biblical-archaeology-review/11/6/1" target="_blank"><img src="DK/Slide52.JPG" alt="Ahiel's House Sketch"></a>
@@ -451,6 +451,19 @@ switch(site) {
   };
   return false;
 };
+function myFunction28() {
+  console.log(document.getElementById("s28").href)
+  var site = document.getElementById("s28").href;
+switch(site) {
+  case "https://members.bib-arch.org/biblical-archaeology-review/20/3/3":
+        document.getElementById("s28").href = "https://members.bib-arch.org/biblical-archaeology-review/35/3/9";
+        break;
+  case "https://members.bib-arch.org/biblical-archaeology-review/35/3/9":
+        document.getElementById("s28").href = "https://members.bib-arch.org/biblical-archaeology-review/20/3/3";
+        break;
+  };
+  return false;
+};
 function myFunction26() {
   console.log(document.getElementById("switch26").href)
   var site = document.getElementById("switch26").href;
@@ -486,6 +499,19 @@ switch(site) {
               case "https://members.bib-arch.org/biblical-archaeology-review/39/5/4":
                     document.getElementById("switch27").href = "https://members.bib-arch.org/biblical-archaeology-review/20/4/3";
                     break;
+  };
+  return false;
+};
+function myFunction51() {
+  console.log(document.getElementById("s51").href)
+  var site = document.getElementById("s51").href;
+switch(site) {
+  case "https://members.bib-arch.org/biblical-archaeology-review/14/3/3":
+        document.getElementById("s51").href = "https://members.bib-arch.org/biblical-archaeology-review/11/6/1";
+        break;
+  case "https://members.bib-arch.org/biblical-archaeology-review/11/6/1":
+        document.getElementById("s51").href = "https://members.bib-arch.org/biblical-archaeology-review/14/3/3";
+        break;
   };
   return false;
 };
